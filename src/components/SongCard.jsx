@@ -14,8 +14,8 @@ const SongCard = ({ song, i }) => (
 
         <PlayPause 
         song={song}
-        handlePause={handlePauseClick}
-        handlePlay={handlePlayClick}
+        // handlePause={handlePauseClick}
+        // handlePlay={handlePlayClick}
         />
       </div>
       <img src={song.data.albumOfTrack.coverArt.sources[0].url} alt="song_img" />
