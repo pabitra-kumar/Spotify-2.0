@@ -1,4 +1,4 @@
-import { loader } from "../assets";
+import loader from "../assets/loader.svg";
 
 const Loader = ({ title }) => (
   <div className="w-full flex flex-col justify-center items-center">

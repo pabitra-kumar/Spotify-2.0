@@ -24,7 +24,7 @@ export const spotifyApi = createApi({
     },
   }),
   endpoints: (builder) => ({
-    getTopCharts: builder.query({query: () => '/?q=Dance&type=multi'})
+    getTopCharts: builder.query({query: () => '/?q=Dance&type=multi&limit=30'})
   })
 })
 
