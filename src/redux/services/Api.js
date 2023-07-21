@@ -4,7 +4,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 // const options = {
 //   method: 'GET',
 //   headers: {
-//     'X-RapidAPI-Key': '4bc7008148msh4978285e0f30787p145ec2jsn4d4aa051c0a3',
+//     'X-RapidAPI-Key': import.meta.env.VITE_SPOTIFY_RAPID_API_KEY,
 //     'X-RapidAPI-Host': 'spotify-data.p.rapidapi.com'
 //   }
 // };
@@ -19,7 +19,7 @@ export const spotifyApi = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: 'https://spotify-data.p.rapidapi.com/search',
     prepareHeaders: (headers) => {
-      headers.set('X-RapidAPI-Key', '4bc7008148msh4978285e0f30787p145ec2jsn4d4aa051c0a3');
+      headers.set('X-RapidAPI-Key', import.meta.env.VITE_SPOTIFY_RAPID_API_KEY);
       return headers;
     },
   }),
